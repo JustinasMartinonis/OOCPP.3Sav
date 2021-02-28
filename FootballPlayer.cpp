@@ -3,17 +3,17 @@
     	int football::FootballPlayer::countFootballerID = 1;
 
 		football::FootballPlayer::FootballPlayer() {
-			footballerID = countFootballerID;
-			++countFootballerID;
-			yearSigned = 0;
-			contractLength = 0;
-			shirtNumber = 0;
-			playtime = 0;
-			goals = 0;
-			assists = 0;
-			salary = 0;
-			careerGoals = 0;
-			careerAssists = 0;
+		footballerID = countFootballerID;
+		++countFootballerID;
+		yearSigned = 0;
+		contractLength = 0;
+		shirtNumber = 0;
+		playtime = 0;
+		goals = 0;
+		assists = 0;
+		salary = 0;
+		careerGoals = 0;
+		careerAssists = 0;
         }
         football::FootballPlayer::~FootballPlayer() {
         }
@@ -101,7 +101,7 @@
 	}
 	std::string football::FootballPlayer::toString() {
 	    std::ostringstream ss;
-	    ss << "\nFootballer (ID " << footballerID << ") End of the Season stats\n" << std::endl;
+	    	ss << "\nFootballer (ID " << footballerID << ") End of the Season stats\n" << std::endl;
 		ss << "Name: " << name << std::endl;
 		ss << "Surname: " << surname << std::endl;
 		ss << "Shirt no.: " << shirtNumber << std::endl;
