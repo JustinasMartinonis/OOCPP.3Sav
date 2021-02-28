@@ -21,13 +21,13 @@ void football::FootballPlayer::setName(std::string n) {
     name = n;
 }
 std::string football::FootballPlayer::getName() {
-	return name;
+    return name;
 }
 void football::FootballPlayer::setSurname(std::string sn) {
-	surname = sn;
+    surname = sn;
 }
 std::string football::FootballPlayer::getSurname() {
-	return surname;
+    return surname;
 }
 void football::FootballPlayer::setYearSigned(int yearS) {
     if(yearS <= 2021 && yearS >= 2000) {
@@ -37,7 +37,7 @@ void football::FootballPlayer::setYearSigned(int yearS) {
     }
 }
 int football::FootballPlayer::getYearSigned() {
-	return yearSigned;
+    return yearSigned;
 }
 void football::FootballPlayer::setContractLength(int contract) {
     if(contract <= 20 && contract >= 1){
@@ -47,7 +47,7 @@ void football::FootballPlayer::setContractLength(int contract) {
     }
 }
 int football::FootballPlayer::getContractLength() {
-return contractLength;
+    return contractLength;
 }
 void football::FootballPlayer::setShirtNumber(int shirtN) {
     if(shirtN <= 99 && shirtN >=1){
@@ -67,7 +67,7 @@ void football::FootballPlayer::setSalary(float s) {
     }
 }
 float football::FootballPlayer::getSalary() {
-return salary;
+    return salary;
 }
 void football::FootballPlayer::addGoals(int goal) {
     if(goal >= 0){
@@ -75,7 +75,7 @@ void football::FootballPlayer::addGoals(int goal) {
 } else {
     throw std::invalid_argument("Invalid amount of goals.");
     }
-careerGoals += goal;
+    careerGoals += goal;
 }
 void football::FootballPlayer::addAssists(int assist) {
     if(assist >= 0){
@@ -83,7 +83,7 @@ void football::FootballPlayer::addAssists(int assist) {
 } else {
     throw std::invalid_argument("Invalid amount of assists.");
     }
-careerAssists += assist;
+    careerAssists += assist;
 }
 void football::FootballPlayer::minutesPlayed(int minutes) {
     if(minutes >= 0){
@@ -93,11 +93,11 @@ void football::FootballPlayer::minutesPlayed(int minutes) {
     }
 }
 void football::FootballPlayer::endSeason() {
---contractLength;
-std::cout << toString() << std::endl;
-goals = 0;
-assists = 0;
-playtime = 0;
+    --contractLength;
+    std::cout << toString() << std::endl;
+    goals = 0;
+    assists = 0;
+    playtime = 0;
 }
 std::string football::FootballPlayer::toString() {
     std::ostringstream ss;
@@ -113,9 +113,9 @@ std::string football::FootballPlayer::toString() {
 	ss << "Current salary (millions EUR): " << salary << std::endl;
 	ss << "\nCurrent Career Goals: " << careerGoals << std::endl;
 	ss << "Current Career Assists: " << careerAssists << std::endl;
-    if(contractLength <= 0) {
-	ss << "\nThe player may now sign for a new club" <<
-	" for free or extend his contract!" << std::endl;
-    }
+            if(contractLength <= 0) {
+	        ss << "\nThe player may now sign for a new club" <<
+	        " for free or extend his contract!" << std::endl;
+            }
 	return ss.str();
 }
