@@ -1,25 +1,25 @@
 #include "FootballPlayer.hpp"
 
-    int football::FootballPlayer::countFootballerID = 1;
+    	int football::FootballPlayer::countFootballerID = 1;
 
-    football::FootballPlayer::FootballPlayer() {
-        footballerID = countFootballerID;
-        ++countFootballerID;
-        yearSigned = 0;
-        contractLength = 0;
-        shirtNumber = 0;
-        playtime = 0;
-        goals = 0;
-        assists = 0;
-        salary = 0;
-        careerGoals = 0;
-        careerAssists = 0;
-    }
-    football::FootballPlayer::~FootballPlayer() {
-    }
-    void football::FootballPlayer::setName(std::string n) {
-        name = n;
-    }
+		football::FootballPlayer::FootballPlayer() {
+			footballerID = countFootballerID;
+			++countFootballerID;
+			yearSigned = 0;
+			contractLength = 0;
+			shirtNumber = 0;
+			playtime = 0;
+			goals = 0;
+			assists = 0;
+			salary = 0;
+			careerGoals = 0;
+			careerAssists = 0;
+        }
+        football::FootballPlayer::~FootballPlayer() {
+        }
+        void football::FootballPlayer::setName(std::string n) {
+            name = n;
+        }
 	std::string football::FootballPlayer::getName() {
 		return name;
 	}
@@ -56,8 +56,8 @@
             throw std::invalid_argument("Invalid shirt number.");
 	    }
 	}
-    int football::FootballPlayer::getShirtNumber() {
-        return shirtNumber;
+        int football::FootballPlayer::getShirtNumber() {
+            return shirtNumber;
 	}
 	void football::FootballPlayer::setSalary(float s) {
 	    if(s > 0){
