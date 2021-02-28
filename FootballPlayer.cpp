@@ -102,17 +102,17 @@
 	std::string football::FootballPlayer::toString() {
 	    std::ostringstream ss;
 	    ss << "\nFootballer (ID " << footballerID << ") End of the Season stats\n" << std::endl;
-        ss << "Name: " << name << std::endl;
-        ss << "Surname: " << surname << std::endl;
-        ss << "Shirt no.: " << shirtNumber << std::endl;
-        ss << "Season Goals: " << goals << std::endl;
-        ss << "Season Assists: " << assists << std::endl;
-        ss << "Minutes played: " << playtime << std::endl;
-        ss << "\nContract signed in: " << yearSigned << std::endl;
-        ss << "Years left in contract: " << contractLength << std::endl;
-        ss << "Current salary (millions EUR): " << salary << std::endl;
-        ss << "\nCurrent Career Goals: " << careerGoals << std::endl;
-        ss << "Current Career Assists: " << careerAssists << std::endl;
+		ss << "Name: " << name << std::endl;
+		ss << "Surname: " << surname << std::endl;
+		ss << "Shirt no.: " << shirtNumber << std::endl;
+		ss << "Season Goals: " << goals << std::endl;
+		ss << "Season Assists: " << assists << std::endl;
+		ss << "Minutes played: " << playtime << std::endl;
+		ss << "\nContract signed in: " << yearSigned << std::endl;
+		ss << "Years left in contract: " << contractLength << std::endl;
+		ss << "Current salary (millions EUR): " << salary << std::endl;
+		ss << "\nCurrent Career Goals: " << careerGoals << std::endl;
+		ss << "Current Career Assists: " << careerAssists << std::endl;
             if(contractLength <= 0) {
                 ss << "\nThe player may now sign for a new club" <<
                 " for free or extend his contract!" << std::endl;
